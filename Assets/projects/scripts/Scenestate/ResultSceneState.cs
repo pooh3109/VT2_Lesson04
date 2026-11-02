@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class ResultSceneState : IState
+public class ResultSceneState : BaseSceneState
 {
-    private SceneManager _sceneManager;
+    public override string HudAddress { get; protected set;} = "Assets/projects/Prefab/ResultHUDCanvas_FullHD";
 
     public void Enter()
     {
